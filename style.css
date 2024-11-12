@@ -1,0 +1,242 @@
+@font-face {
+    font-family: titulo;
+    src: url(lemon_milk/LEMONMILK-Bold.otf);
+}
+
+@font-face {
+    font-family: letras;
+    src: url(lemon_milk/LEMONMILK-Light.otf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6666e7d6;
+    color: beige;
+    transition: background-color 0.8s ease, color 0.1s ease;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 20px;
+    color: aliceblue;
+}
+
+header button {
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+section {
+    padding: auto 20px;
+    margin-top: 20px auto;
+    height: 100vh;
+    width: 70%;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+
+}
+
+span {
+    background-color: #333;
+}
+
+#sobre div {
+    width: 50%;
+}
+
+#sobre img {
+    height: 400px;
+    width: 280px;
+    margin: 20%;
+
+}
+
+h1 {
+    font-family: titulo;
+}
+
+h2 {
+    font-family: titulo;
+    margin: 10px;
+    font-size: 4em;
+}
+
+h3 {
+    font-family: titulo;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.projeto {
+    background-color: #333333d2;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#terminal {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.github {
+    text-align: center;
+    padding: 8%;
+}
+
+
+#git {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 40px;
+    animation: alternate-reverse;
+    cursor: pointer;
+}
+
+
+#botao {
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 8px;
+    cursor: pointer;
+    margin-left: 8%;
+}
+
+#botao:hover {
+    background-color: #6666e7d6;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modo Escuro */
+
+.dark-mode {
+    background-color: #333;
+    color: #66c160;
+}
+
+.dark-mode header {
+    background-color: #0f0f0f;
+}
+
+.dark-mode header button {
+    background-color: #333;
+    color: #66c160;
+}
+
+.dark-mode .projeto {
+    background-color: #66c160;
+
+}
+
+.dark-mode .projeto h3 {
+    color: #333;
+}
+
+.dark-mode .projeto p {
+    color: #333;
+}
+
+.dark-mode h1 {
+    color: #66c160;
+}
+
+.dark-mode .diferenca span {
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+@media (max-width:480px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50vh;
+        text-align: center;
+        padding: 0%;
+        width: 90%;
+
+    }
+
+    #sobre div {
+        padding-left: none;
+    }
+
+    #sobre p {}
+
+    img {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        right: 20%;
+        bottom: 15%;
+    }
+
+    .projeto {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 50vh;
+        margin: 5%;
+        margin-bottom: 10%;
+    }
+}
